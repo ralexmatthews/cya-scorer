@@ -12,78 +12,90 @@ export default function Home() {
         {totalScore()}k <button onClick={() => setTotalScore(add(1))}>+</button>
       </h1>
       <div class="flex flex-col gap-2 font-normal">
-        <button
-          onClick={() => setTotalScore(add(1))}
-          class="bg-orange-700 text-white p-4 rounded"
-        >
-          $1k - Penny Jar
-        </button>
-        <button
-          onClick={() => setTotalScore(add(5))}
-          class="bg-purple-700 text-white p-4 rounded"
-        >
-          $5k - Comic Books
-        </button>
-        <button
-          onClick={() => setTotalScore(add(5))}
-          class="bg-yellow-300 text-black p-4 rounded"
-        >
-          $5k - Model Trains
-        </button>
-        <button
-          onClick={() => setTotalScore(add(5))}
-          class="bg-orange-500 text-white p-4 rounded"
-        >
-          $5k - Piano
-        </button>
-        <button
-          onClick={() => setTotalScore(add(10))}
-          class="bg-lime-300 text-black p-4 rounded"
-        >
-          $10k - Cash Under the Mattress
-        </button>
-        <button
-          onClick={() => setTotalScore(add(10))}
-          class="bg-pink-800 text-white p-4 rounded"
-        >
-          $10k - Jewels
-        </button>
-        <button
-          onClick={() => setTotalScore(add(15))}
-          class="bg-blue-500 text-white p-4 rounded"
-        >
-          $15k - Stunt Plane
-        </button>
-        <button
-          onClick={() => setTotalScore(add(15))}
-          class="bg-red-500 text-white p-4 rounded"
-        >
-          $15k - Classic Auto
-        </button>
-        <button
-          onClick={() => setTotalScore(add(15))}
-          class="bg-teal-300 text-black p-4 rounded"
-        >
-          $15k - Scooter
-        </button>
-        <button
-          onClick={() => setTotalScore(add(20))}
-          class="bg-amber-900 text-white p-4 rounded"
-        >
-          $20k - Log Cabin
-        </button>
-        <button
-          onClick={() => setTotalScore(add(25))}
-          class="bg-zinc-200 text-black p-4 rounded"
-        >
-          $25k - Silver
-        </button>
-        <button
-          onClick={() => setTotalScore(add(50))}
-          class="bg-amber-300 text-black p-4 rounded"
-        >
-          $50k - Gold
-        </button>
+        <div class="flex gap-2">
+          <button
+            onClick={() => setTotalScore(add(1))}
+            class="w-full bg-orange-700 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$1k</span> Penny Jar
+          </button>
+          <button
+            onClick={() => setTotalScore(add(5))}
+            class="w-full bg-purple-700 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$5k</span> Comic Books
+          </button>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onClick={() => setTotalScore(add(5))}
+            class="w-full bg-yellow-300 text-black p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$5k</span> Model Trains
+          </button>
+          <button
+            onClick={() => setTotalScore(add(5))}
+            class="w-full bg-orange-500 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$5k</span> Piano
+          </button>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onClick={() => setTotalScore(add(10))}
+            class="w-full bg-lime-300 text-black p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$10k</span> Cash
+          </button>
+          <button
+            onClick={() => setTotalScore(add(10))}
+            class="w-full bg-pink-800 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$10k</span> Jewels
+          </button>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onClick={() => setTotalScore(add(15))}
+            class="w-full bg-blue-500 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$15k</span> Stunt Plane
+          </button>
+          <button
+            onClick={() => setTotalScore(add(15))}
+            class="w-full bg-red-500 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$15k</span> Classic Auto
+          </button>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onClick={() => setTotalScore(add(15))}
+            class="w-full bg-teal-300 text-black p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$15k</span> Scooter
+          </button>
+          <button
+            onClick={() => setTotalScore(add(20))}
+            class="w-full bg-amber-900 text-white p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$20k</span> Log Cabin
+          </button>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onClick={() => setTotalScore(add(25))}
+            class="w-full bg-zinc-200 text-black p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$25k</span> Silver
+          </button>
+          <button
+            onClick={() => setTotalScore(add(50))}
+            class="w-full bg-amber-300 text-black p-4 rounded text-left align-middle"
+          >
+            <span class="text-xl font-bold">$50k</span> Gold
+          </button>
+        </div>
       </div>
     </main>
   );
